@@ -1,1 +1,35 @@
 // Navigation Styles here
+.nav-bar {
+    .displayFlex(space-between,center);
+    height: 8vh;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+
+    @media @mobile {
+        flex-direction: column;
+        height: 7vh;
+        margin-top: 10px;
+    }
+    nav {
+        flex-basis: 400px;
+        .displayFlex(space-around,center);
+
+        @media @mobile {
+            width:100%;
+        }
+
+        a{
+            text-decoration: none;
+            font-size: 1.9rem;
+            color: @font-color;
+
+            @media @mobile {
+                font-size: 1.4rem;
+            }
+
+        }
+    }
+    
+
+}
